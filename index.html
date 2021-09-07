@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+    <script src="https://kit.fontawesome.com/de20e15461.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-apple"></i></span>
+                        <span class="title">
+                            <h2>Nome da Marca</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-comments"></i></span>
+                        <span class="title">Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></i></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-lock"></i></i></span>
+                        <span class="title">Senha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Procure aqui">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpeg">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardNme">Visualizações Diárias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardNme">Vendas</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">208</div>
+                        <div class="cardNme">Comentários</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">R$ 6,042</div>
+                        <div class="cardNme">Ganho</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Pedidos Recentes</h2>
+                        <a href="#" class="btn">Ver Todos</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Preço</td>
+                                <td>Pagamento</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cervejeira Tatanium</td>
+                                <td>R$1790</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cooler Térmico Cervejas</td>
+                                <td>R$159,90</td>
+                                <td>A Pagar</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Caixa de Som</td>
+                                <td>R$2899</td>
+                                <td>Pago</td>
+                                <td><span class="status return">Retornou</span></td>
+                            </tr>
+                            <tr>
+                                <td>Churrasqueira Compacta</td>
+                                <td>R$299</td>
+                                <td>A Pagar</td>
+                                <td><span class="status inprogress">Em Progresso</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cervejeira Tatanium</td>
+                                <td>R$1790</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+                            <tr>
+                                <td>Caixa de Som</td>
+                                <td>R$2899</td>
+                                <td>Pago</td>
+                                <td><span class="status return">Retornou</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Clientes Recentes</h2>
+                        <a href="#" class="btn">Ver Todos</a>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img1.jpg"></div></td>
+                                <td><h4>David<br><span>Brasília</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img2.jpg"></div></td>
+                                <td><h4>Alice<br><span>São Paulo</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img3.jpg"></div></td>
+                                <td><h4>João<br><span>Salvador</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img4.jpg"></div></td>
+                                <td><h4>Thaís<br><span>Teresina</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="img5.jpg"></div></td>
+                                <td><h4>Mariana<br><span>Belém</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
